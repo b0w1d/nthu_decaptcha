@@ -1,5 +1,5 @@
 # nthu_decaptcha
-Automatically fills the captcha field in ccxp.nthu.edu.tw/ccxp/INQUIRE
+Automatically fills the captcha field in www.ccxp.nthu.edu.tw/ccxp/INQUIRE
 
 ### Availabe As
 Chrome extension: https://chrome.google.com/webstore/detail/nthudecaptcha/bncfgoachcelcbeblmacaonaklplpbin  
