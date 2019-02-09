@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "nthu_decaptcha",
+  "version": "1.0",
+  "description": "Automatically fills the captcha field in ccxp.nthu.edu.tw/ccxp/INQUIRE",
+  "content_scripts": [
+    {
+      "matches": ["*://*.ccxp.nthu.edu.tw/ccxp/*"],
+      "js": ["decaptcha.js"]
+    }
+  ]
+}
