@@ -2,8 +2,8 @@
 Automatically fills the captcha field in ccxp.nthu.edu.tw/ccxp/INQUIRE
 
 ### Availabe As
-Firefox extension: https://addons.mozilla.org/en-US/firefox/addon/nthu_decaptcha/  
 Chrome extension: https://chrome.google.com/webstore/detail/nthudecaptcha/bncfgoachcelcbeblmacaonaklplpbin
+Firefox extension: Download "nthu_decaptcha-1.1-an+fx.xpi" and open it with firefox.
 
 ### Remarks
 Uses simple traditional algorithm to extract the digits. So far we haven't found any case that fails the program.  
