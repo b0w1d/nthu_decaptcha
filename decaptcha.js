@@ -15,9 +15,11 @@ function getPixelMatrix(url) {
   return res;
 }
 
-var url = document.documentElement.innerHTML.match(/auth_img.php\?pwdstr=[0-9]+-[0-9]+/)[0];
+var url = document.documentElement.innerHTML.match(/auth_img.php\?pwdstr=[0-9]+-[0-9]+/);
+if (!url) url = document.documentElement.innerHTML.match(/..\/..\/..\/mod\/auth_img[^"]+/);
 
 if (url) {
+  url = url[0];
   var m = getPixelMatrix(url);
 
   var c_cnt = {};
@@ -63,5 +65,7 @@ if (url) {
     ans += String(d);
   }
 
-  document.querySelectorAll("[name=passwd2]")[0].value = ans;
+  var out = document.querySelectorAll("[name=passwd2]")[0]
+         || document.querySelectorAll("[name=auth_num]")[0];
+  out.value = ans;
 }
