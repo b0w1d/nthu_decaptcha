@@ -2,7 +2,7 @@
 Automatically fills the captcha field in ccxp.nthu.edu.tw/ccxp/INQUIRE
 
 ### Availabe As
-Chrome extension: https://chrome.google.com/webstore/detail/nthudecaptcha/bncfgoachcelcbeblmacaonaklplpbin
+Chrome extension: https://chrome.google.com/webstore/detail/nthudecaptcha/bncfgoachcelcbeblmacaonaklplpbin  
 Firefox extension: Download "nthu_decaptcha-1.1-an+fx.xpi" and open it with firefox.
 
 ### Remarks
