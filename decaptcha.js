@@ -15,12 +15,11 @@ function getPixelMatrix(url) {
   return res;
 }
 
-var url = document.documentElement.innerHTML.match(/auth_img.php\?pwdstr=[0-9]+-[0-9]+/);
-if (!url) url = document.documentElement.innerHTML.match(/..\/..\/..\/mod\/auth_img[^"]+/);
+var url = document.documentElement.innerHTML.match(/auth_img.php\?pwdstr=[0-9]+-[0-9]+/)
+       || document.documentElement.innerHTML.match(/..\/..\/..\/mod\/auth_img[^"]+/);
 
 if (url) {
-  url = url[0];
-  var m = getPixelMatrix(url);
+  var m = getPixelMatrix(url[0]);
 
   var c_cnt = {};
   m.forEach(v => c_cnt[v] = (c_cnt[v] || 0) + 1);
